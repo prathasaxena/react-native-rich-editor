@@ -188,7 +188,7 @@ export default class RichTextEditor extends Component {
                     domStorageEnabled={false}
                     bounces={false}
                     javaScriptEnabled={true}
-                    source={viewHTML}
+                    source={{...viewHTML, baseUrl:""}}
                     opacity={opacity}
                     onLoad={that.init}
                 />
